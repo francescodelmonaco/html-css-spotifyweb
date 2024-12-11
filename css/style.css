@@ -20,6 +20,16 @@ html {
     border-radius: 20px;
 }
 
+h2,
+h3 {
+    color: var(--color-white);
+    margin: 10px 0;
+}
+
+span {
+    color: var(--color-lightgray);
+}
+
 /* SEARCH */
 .flex {
     display: flex;
@@ -71,14 +81,26 @@ div.music {
     overflow: scroll;
 }
 
-div.music ul {
+.music__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.music__section--type {
+    color: var(--color-lightgray);
+}
+
+.music__album {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
-
 }
 
-div.music ul li {
+.music__album li {
     flex-basis: calc(100% / 2 - 5px);
+    text-align: center;
 }
