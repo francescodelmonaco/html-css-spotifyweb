@@ -16,8 +16,9 @@ html {
 .button {
     color: var(--color-white);
     border: 1px solid var(--color-white);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
+    margin-right: 5px;
 }
 
 h2,
@@ -30,6 +31,14 @@ span {
     color: var(--color-lightgray);
 }
 
+img {
+    width: 100%;
+}
+
+.symbol {
+    height: 20px;
+}
+
 /* SEARCH */
 .flex {
     display: flex;
@@ -38,10 +47,10 @@ span {
     height: 90vh;
 }
 
-div.search {
+.search {
     background-color: var(--color-black);
     flex-basis: 10vw;
-    height: 100%;
+    height: 90vh;
 
     display: flex;
     flex-direction: column;
@@ -49,24 +58,36 @@ div.search {
     align-items: center;
 }
 
-div.col-up figure,
-div.col-down figure {
-    margin-left: 10%;
+#logo-small {
+    margin-top: 5px;
 }
 
-div.player {
-    background-color: var(--color-gray);
-    height: 10vh;
-    width: 100%;
+#logo-big {
+    display: none;
 }
 
-div.container {
+.playlist {
+    display: none;
+}
+
+.col-up figure span,
+.col-down figure span {
+    display: none;
+}
+
+.col-up figure,
+.col-down figure {
+    height: 30px;
+}
+
+/* CONTAINER */
+.container {
     flex-basis: 90vw;    
     display: flex;
     flex-direction: column;
 }
 
-div.upgrade {
+.upgrade {
     background-color: var(--color-darkblue);
     flex-basis: 10vh;
     display: flex;
@@ -74,7 +95,7 @@ div.upgrade {
     align-items: center;
 }
 
-div.music {
+.music {
     background-color: var(--color-blue);
     flex-basis: 80vh;
     padding: 1vh;
@@ -87,6 +108,7 @@ div.music {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    padding: 10px;
 }
 
 .music__section--type {
@@ -103,4 +125,11 @@ div.music {
 .music__album li {
     flex-basis: calc(100% / 2 - 5px);
     text-align: center;
+}
+
+/* PLAYER */
+.player {
+    background-color: var(--color-gray);
+    height: 10vh;
+    width: 100%;
 }

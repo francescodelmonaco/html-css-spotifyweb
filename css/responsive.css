@@ -2,4 +2,53 @@
 
 @media screen and (min-width: 480px) {
     
+    #logo-small {
+        display: none;
+    }
+
+    #logo-big {
+        display: block;
+        height: 40px;
+    }
+
+    .search {
+        /* background-color: var(--color-black); */
+        flex-basis: 40vw;
+        /* height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; */
+    }
+
+    .container {
+        flex-basis: 60vw;    
+        /* display: flex;
+        flex-direction: column; */
+    }
+
+    .playlist {
+        display: block;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .col-up {
+        padding: 10px;
+    }
+
+    .col-up figure span,
+    .col-down figure span {
+        display: block;
+    }
+
+    .col-up figure,
+    .col-down figure {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
