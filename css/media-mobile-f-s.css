@@ -81,7 +81,7 @@
     }
 
     i {
-        color:#818287;
+        color: var(--color-lightgray);
         font-size: 30px;
         margin-right: 10px;
     }
