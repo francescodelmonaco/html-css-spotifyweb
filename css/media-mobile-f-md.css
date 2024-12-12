@@ -1,0 +1,56 @@
+@media screen and (min-width: 768px) {
+    
+    #logo-big {
+        display: inline-block;
+        height: 40px;
+    }
+
+    .flex__figure--logo{
+        margin-bottom: 30px;
+    }
+
+    .sidebar {
+        background-color: var(--color-black);
+        flex-basis: 25vw;
+        height: 100%;
+    }
+
+    .container {
+        flex-basis: 75vw;    
+        display: flex;
+        flex-direction: column;
+    }
+
+    .music__section--type {
+        color: var(--color-lightgray);
+        font-size: 14px;
+    }
+
+    .music__album {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .music__album li {
+        flex-basis: calc(100% / 4 - 10px);
+        text-align: center;
+    }
+
+    .upgrade {
+        background-color: var(--color-darkblue);
+        flex-basis: 7vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .music {
+        background-color: var(--color-blue);
+        flex-basis: 83vh;
+        padding: 10px;
+        overflow: scroll;
+    }
+    
+}

@@ -143,6 +143,7 @@ hr {
 .music__album li {
     flex-basis: calc(100% / 2 - 5px);
     text-align: center;
+    margin-top: 10px;
 }
 
 /* PLAYER */
@@ -150,4 +151,8 @@ hr {
     background-color: var(--color-gray);
     height: 10vh;
     width: 100%;
+}
+
+.subtitle {
+    margin-bottom: 10px;
 }

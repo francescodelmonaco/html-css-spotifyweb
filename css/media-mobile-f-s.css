@@ -9,6 +9,10 @@
         height: 30px;
     }
 
+    .flex__figure--logo{
+        margin-bottom: 10px;
+    }
+
     .sidebar {
         background-color: var(--color-black);
         flex-basis: 40vw;
@@ -39,6 +43,21 @@
         flex-basis: 60vw;    
         display: flex;
         flex-direction: column;
+    }
+
+    .upgrade {
+        background-color: var(--color-darkblue);
+        flex-basis: 5vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .music {
+        background-color: var(--color-blue);
+        flex-basis: 85vh;
+        padding: 10px;
+        overflow: scroll;
     }
     
     .sidebar__search figure span,
