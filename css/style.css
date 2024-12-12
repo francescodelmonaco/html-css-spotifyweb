@@ -31,12 +31,9 @@ span {
     color: var(--color-lightgray);
 }
 
-img {
-    width: 100%;
-}
-
 .symbol {
-    height: 20px;
+    min-height: 24px;
+    aspect-ratio: 1;
 }
 
 /* SEARCH */
@@ -47,19 +44,40 @@ img {
     height: 90vh;
 }
 
-.search {
+.sidebar {
     background-color: var(--color-black);
     flex-basis: 10vw;
-    height: 90vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    height: 100%;
 }
 
-#logo-small {
+.sidebar__search {
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
     margin-top: 5px;
+}
+
+.sidebar__profile {
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+.sidebar__search figure span,
+.sidebar__profile figure span {
+    display: none;
+}
+
+.sidebar__search figure,
+.sidebar__profile figure {
+    height: 24px;
+    padding-bottom: 5px;
 }
 
 #logo-big {
@@ -68,16 +86,6 @@ img {
 
 .playlist {
     display: none;
-}
-
-.col-up figure span,
-.col-down figure span {
-    display: none;
-}
-
-.col-up figure,
-.col-down figure {
-    height: 30px;
 }
 
 /* CONTAINER */
@@ -98,7 +106,7 @@ img {
 .music {
     background-color: var(--color-blue);
     flex-basis: 80vh;
-    padding: 1vh;
+    padding: 10px;
     overflow: scroll;
 }
 

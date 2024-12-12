@@ -1,5 +1,3 @@
-/* MOBILE FIRST 480px S */
-
 @media screen and (min-width: 480px) {
     
     #logo-small {
@@ -7,19 +5,19 @@
     }
 
     #logo-big {
-        display: block;
-        height: 40px;
+        display: inline-block;
+        height: 30px;
     }
 
-    .search {
-        /* background-color: var(--color-black); */
+    .sidebar {
+        background-color: var(--color-black);
         flex-basis: 40vw;
-        /* height: 100%;
+        height: 100%;
     
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center; */
+        align-items: flex-start;
     }
 
     .container {
@@ -29,24 +27,27 @@
     }
 
     .playlist {
-        display: block;
+        display: inline-block;
 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .col-up {
-        padding: 10px;
+    .flex__figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
     }
 
-    .col-up figure span,
-    .col-down figure span {
-        display: block;
+    .sidebar__search figure span,
+    .sidebar__profile figure span {
+        display: inline-block;
     }
 
-    .col-up figure,
-    .col-down figure {
+    .sidebar__search figure,
+    .sidebar__profile figure {
         display: flex;
         justify-content: flex-start;
         align-items: center;
