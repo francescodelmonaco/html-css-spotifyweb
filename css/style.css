@@ -5,6 +5,7 @@ html {
 
 :root {
     --color-black: #000000;
+    --cover-hover: rgba(0, 0, 0, 0.5);
     --color-gray: #282828;
     --color-lightgray: #818287;
     --color-white: #fff;
@@ -21,7 +22,8 @@ html {
     margin-right: 15px;
 }
 
-.button:hover {
+.button:hover,
+.music-buttons i:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -193,6 +195,37 @@ hr {
     border-radius: 50%;
 }
 
+.cover {
+    width: 100%;
+    aspect-ratio: 1;
+
+    position: relative;
+}
+
+.black-background {
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: var(--cover-hover);
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: none;
+}
+
+.cover:hover .black-background {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.black-background i.fa-circle-play {
+    color: var(--color-white);
+    font-size: 3rem;
+    margin-top: 40%;
+    margin-left: 5%;
+}
+
 /* PLAYER */
 .player {
     background-color: var(--color-gray);
@@ -230,6 +263,12 @@ hr {
     flex-direction: column;
 }
 
+.song-info div span:hover {
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: underline;
+}
+
 .player__i {
     display: flex;
     flex-direction: column;
@@ -241,6 +280,11 @@ hr {
 .player i {
     color: var(--color-lightgray);
     font-size: 12px;
+}
+
+.player__i i:hover {
+    cursor: pointer;
+    color: var(--color-white);
 }
 
 .song-title {
