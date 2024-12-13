@@ -47,7 +47,7 @@
 
     .upgrade {
         background-color: var(--color-darkblue);
-        flex-basis: 5vh;
+        flex-basis: 7vh;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -55,7 +55,7 @@
 
     .music {
         background-color: var(--color-blue);
-        flex-basis: 85vh;
+        flex-basis: 83vh;
         padding: 10px;
         overflow: scroll;
     }

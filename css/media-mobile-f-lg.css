@@ -52,5 +52,14 @@
         padding: 10px;
         overflow: scroll;
     }
+
+    .player__section-1 {
+        width: 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 5px;
+    }
     
 }
