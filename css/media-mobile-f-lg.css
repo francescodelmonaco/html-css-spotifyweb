@@ -50,17 +50,36 @@
 
     .upgrade {
         background-color: var(--color-darkblue);
-        flex-basis: 7vh;
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        
+        position: absolute;
+        width: 80vw;
+        height: 7vh;
+        top: 0;
     }
 
     .music {
         background-color: var(--color-blue);
-        flex-basis: 83vh;
+        flex-basis: 90vh;
         padding: 10px;
         overflow: scroll;
+    }
+
+    .music__section {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0 100px;
+        padding-top: 80px;
+    }
+
+    .music__section--type {
+        color: var(--color-lightgray);
+        font-size: 12px;
     }
 
     .player__section-1 {
