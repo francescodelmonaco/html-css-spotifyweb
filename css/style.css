@@ -18,7 +18,19 @@ html {
     border: 1px solid var(--color-white);
     padding: 10px 20px;
     border-radius: 20px;
-    margin-right: 5px;
+    margin-right: 15px;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+a:hover,
+.sidebar span:hover,
+i.fa-square-plus:hover {
+    cursor: pointer;
+    color: var(--color-white);
 }
 
 h2,
@@ -305,10 +317,32 @@ i.fa-circle-play {
     border-bottom-left-radius: 20px;
 }
 
+.bar__white:hover {
+    cursor: pointer;
+    background-color: var(--color-green);
+    border: 1px solid var(--color-green);
+}
+
 .bar__lightgray {
     width: 70%;
     background-color: var(--color-lightgray);
     border: 1px solid var(--color-lightgray);
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+.point {
+    height: 10px;
+    aspect-ratio: 1;
+    background-color: var(--color-white);
+    border-radius: 50%;
+}
+
+.point {
+    display: none;
+}
+
+.bar__white:hover + .point {
+    cursor: pointer;
+    display: block;
 }

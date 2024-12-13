@@ -92,7 +92,7 @@
     }
 
     .music-buttons {
-        width: 70%;
+        width: 50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -111,7 +111,7 @@
     }
     
     .player__section-3 {
-        width: 30vw;
+        width: 20vw;
         display: flex;
         justify-content: flex-end;
         align-items: center;
