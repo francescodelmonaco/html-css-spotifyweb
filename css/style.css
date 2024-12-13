@@ -170,12 +170,6 @@ hr {
     justify-content: space-between;
 }
 
-/* .player__section-1,
-.player__section-2,
-.player__section-3 {
-    flex-basis: calc(100% / 3);
-} */
-
 .player-img {
     height: 20px;
     aspect-ratio: 1;
@@ -277,10 +271,14 @@ hr {
     width: 30%;
     background-color: var(--color-white);
     border: 1px solid var(--color-white);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 .bar__lightgray {
     width: 70%;
     background-color: var(--color-lightgray);
     border: 1px solid var(--color-lightgray);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
