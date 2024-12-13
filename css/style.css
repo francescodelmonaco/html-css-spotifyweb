@@ -168,6 +168,7 @@ hr {
 
     display: flex;
     justify-content: space-between;
+    padding: 0 5px;
 }
 
 .player-img {
@@ -189,7 +190,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
 
+.song-info div {
+    display: flex;
+    flex-direction: column;
 }
 
 .player__i {
