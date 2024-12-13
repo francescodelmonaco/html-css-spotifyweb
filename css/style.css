@@ -254,7 +254,11 @@ hr {
 
 .music-buttons > i {
     color: var(--color-white);
-    font-size: 18px;
+    font-size: 16px;
+}
+
+i.fa-circle-play {
+    font-size: 25px;
 }
 
 .minutes {

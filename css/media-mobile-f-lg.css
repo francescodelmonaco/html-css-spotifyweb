@@ -21,6 +21,16 @@
         flex-direction: column;
     }
 
+    .music__section {
+        /* display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px; */
+        padding: 0 70px;
+    }
+
     .music__section--type {
         color: var(--color-lightgray);
         font-size: 14px;
@@ -61,5 +71,32 @@
         gap: 5px;
         padding: 5px;
     }
+
+    .music-buttons {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    i.fa-circle-play {
+        font-size: 30px;
+    }
+
+    .bar__volume {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        width: 40%;
+        height: 13px;
+    }
     
+    .player__section-3 {
+        width: 30vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 3px;
+        padding: 5px;
+    }
 }

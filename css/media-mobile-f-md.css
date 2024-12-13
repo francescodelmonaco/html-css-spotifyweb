@@ -112,7 +112,11 @@
     
     .music-buttons > i {
         color: var(--color-white);
-        font-size: 22px;
+        font-size: 20px;
+    }
+
+    i.fa-circle-play {
+        font-size: 26px;
     }
     
     .minutes {
